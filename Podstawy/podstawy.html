@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Tytul Strony</title>
+  </head>
+  <body>
+       <h1>To jest strona</h1>
+       <script>
+          var liczba = 0;
+       
+           var mnozna = 1;
+           var mnoznik = 1;
+           while(mnozna <= 9)
+           {
+              while(mnozna <= 9)
+              {
+               wynik = mnozna * mnoznik;
+                document.write(mnozna + " * " + mnoznik + " = " + wynik + "<br/>");
+               mnoznik +=1;
+              }
+          
+             mnoznik = 1;
+             mnozna = mnozna + 1;
+           }
+       </script>
+  </body>
+</html>
