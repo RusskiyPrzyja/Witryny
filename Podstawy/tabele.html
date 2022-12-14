@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Tytul Strony</title>
+  </head>
+  <body>
+       <script>
+             let tablicaliczb = []
+             tablicaliczb[0] = 5
+             tablicaliczb[1] = 7
+             tablicaliczb[2] = 1
+             tablicaliczb[3] = 11576;
+             tablicaliczb[4] = 45;
+
+             for(let i = 0; i < tablicaliczb.length; i++)
+                  document.write(tablicaliczb[i] + "<br/>")
+         function SzukajMax(paramTab)
+         {
+            let AktMax = paramTab[0];
+            for(let i = 0; i < tablicaliczb.length; i++)
+                if(AktMax < paramTab[i])
+                    AktMax = paramTab[i];
+            document.write("Najwieksza wartosc " + AktMax + "<br/>")
+         }
+         SzukajMax(tablicaliczb)
+
+         function wyswietlParametry(p1,p2)
+         {
+            document.write(p1 + "<br/s>")
+            document.write(p2 + "<br/s>")
+         }
+         wyswietlParametry(15, "Ala")
+       </script>
+  </body>
+</html>

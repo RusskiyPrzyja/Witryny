@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Tytul Strony</title>
+  </head>
+  <body>
+      <p>Nowy tekst</p>
+      <input type="text" id="newText" value="Przykladowy tekst"/><br/>
+      <input type="button" value="Podmień tekst" onclick="changeText()"/><br>
+      <div id="divToChange"><p>afasdfgefzfsa</p></div>
+      
+      <img src="2.jfif" width="150" height="150" id="ImgId"
+      onmouseenter="this.src='image.jpeg'"
+      onmouseleave="this.src='2.jfif'" />
+      
+   
+       <script>
+              function mouse()
+              {
+                var licznik = 0
+                 forEach(element => mousemove)
+                 {
+                   licznik++
+                 };
+                 document.write(licznik)
+              }
+              function changeText()
+              { 
+                let objectWithNewText=document.getElementById("newText");
+                 let objectToChange = document.getElementById ("divToChange");
+                // objectToChange.innerHTML="TOP G";
+                 objectToChange.innerHTML = objectWithNewText.value;
+
+              }
+             // input type= "button" value="Kliknij mnie" onclick="alert('Witaj na Stronie');"/><br/>
+             //<input type= "button" value="Kliknij mnie" onmouseenter="alert('Witaj na Stronie');"/> <br/>
+       </script>
+  </body>
+</html> 

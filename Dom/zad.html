@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Przykładowy program</title>
+    </head>
+     <body>
+        <p>Podaj imię:</p>
+        <input type="text" id="nameId"/>
+        <p>Podaj wiek</p>
+        <input type="text" id="ageId"/>
+        <br/>
+        <input type="button" value="Wyświetl informację" onclick="getInfo()"/>
+        <br/>
+
+          <script>
+      function getInfo()
+        {
+          let age = document.getElementById("ageId").value;
+         if(age == "")
+          {
+            alert("błąd");
+            document.getElementById("helloid").innerText = "błąd";
+          }
+         if(age > 140)
+         {
+            alert("Podaj prawdziwy wiek")
+         }
+         else if(age < 1)
+         {
+            alert("Podaj prawdziwy wiek")
+         }
+          function getAge()
+          {
+            if(age >= 18)
+            {
+               document.write("Jestes pelnoletni")
+            }
+            else
+            {
+               document.write("nie jestes pelnoletni")
+            }
+
+          }
+         let nameId = document.getElementById("nameId").value
+         getAge();
+         document.write(" ")
+         document.write("Witaj na stronie " + nameId)
+         
+        }
+
+        </script>
+     </body>
+
+
+
+</html>
