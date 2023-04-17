@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<header>
+    <meta charset="UTF-8">
+    <title>Kochamy kawę</title>
+      <link rel="stylesheet" href="styl.css">
+</header>
+<head>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Kawa">
+    </div>
+  <div class="lewemenu">
+     <div class="menu">
+        <a href="index.html">Strona Głowna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog</a>
+        <a href="https://gatunki-kawy.pl/">Gatunek Kawy</a>
+      </div>    
+  </div>
+    <div class="baner">
+        <div id=h><h1>Sklep z kawą</h1> </div>
+    </div>
+ <div class="prawymain">
+     <p><h4> Oferta
+
+        <li>Arabica</li>
+        <li>Robusta</li>
+        <div class="element3">
+            <li>bezkofeinowa</li>
+        </div>
+        <li>zielona</li>
+    </h4>
+ </div>
+ <div class="lewymain">
+  <p>Podaj numer kawy: <input id="kawa" type="number"><br>
+  <p>Podaj wage w dekagramach: <input id="waga" type="number"><br>
+  <button onclick="policzenie();">Zamów</button>
+  <span id="wynik">
+
+  </span>
+    </div>
+</body>
+<div class="stopka">
+  strone przygotowal. Jakub CzarnyTyran Nowak
+</div>
+</html>
+<script>
+   function policzenie()
+   {
+            let kawa = document.getElementById("kawa").value;
+            let waga = document.getElementById("waga").value;
+            let koszt;
+            let result = document.getElementById("wynik");
+
+            if (kawa == 1)
+                koszt = waga * 5;
+            else if (kawa == 2)
+                koszt = waga * 7;
+            else if (kawa == 4)
+                koszt = waga * 6;
+            else if (kawa != 1 || kawa != 2 || kawa != 4)
+                koszt = 0;
+             wynik.innerHTML = "Koszt zamówienia wynosi: " + koszt + " zł";
+   }
+</script>
